@@ -13,6 +13,7 @@ from operations.router import router as router_operation
 from src.auth.models import User
 from tasks.router import router as router_tasks
 from redis import asyncio as aioredis
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title='Trading App'
@@ -21,6 +22,23 @@ fastapi_users = FastAPIUsers[User, int](
     get_user_manager,
     [auth_backend],
 )
+
+origins = [
+    "http://localhost",
+    "http://localhost:8000",  # Не работает?
+    "https://localhost",
+    "https://localhost:8000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "OPTIONS", "DELETE", "PATCH", "PUT"],
+    allow_headers=["Content-Type", "Set-Cookie", "Access-Control-Allow-Headers", "Access-Control-Allow-Cookies",
+                   'Authorization'],
+)
+
 app.include_router(
     fastapi_users.get_auth_router(auth_backend),
     prefix="/auth/jwt",

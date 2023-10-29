@@ -8,7 +8,6 @@ async def test_add_role():
         stmt = insert(role).values(id=1, name="admin", permissions=None)
         await session.execute(stmt)
         await session.commit()
-
         query = select(role)
         result = await session.execute(query)
         assert result.all() == [(1, 'admin', None)], "No role added"

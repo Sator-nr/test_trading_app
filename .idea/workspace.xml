@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fd6ef81-38e9-4b23-bfec-9128d67fa75a" name="Changes" comment="Added tests, minor qol changes">
+    <list default="true" id="8fd6ef81-38e9-4b23-bfec-9128d67fa75a" name="Changes" comment="More tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_auth.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698618915438</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="More tests">
+      <created>1698622832340</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698622832340</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +198,8 @@
     <MESSAGE value="Refactor, email, redis &amp; celery implementation" />
     <MESSAGE value="Minor changes, refactor" />
     <MESSAGE value="Added tests, minor qol changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tests, minor qol changes" />
+    <MESSAGE value="More tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="More tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
