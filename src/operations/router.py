@@ -22,7 +22,7 @@ def get_long_op():
 
 
 # Вопрос - почему result.all() не возвращает привычный словарь?
-@router.get('/')
+@router.get('/get')
 async def get_specific_operations(operation_type: str, session: AsyncSession = Depends(get_async_session)):
     try:
         query = select(operation).where(operation.c.type == operation_type)
@@ -42,7 +42,7 @@ async def get_specific_operations(operation_type: str, session: AsyncSession = D
         })
 
 
-@router.post('/')
+@router.post('/post')
 async def add_specific_operations(new_operation: OperationCreate, session: AsyncSession = Depends(get_async_session)):
     statement = insert(operation).values(new_operation.model_dump())
     await session.execute(statement)
