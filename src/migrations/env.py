@@ -5,7 +5,7 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from config import DB_HOST, DB_NAME, DB_PASS, DB_PORT, DB_USER
+from src.config import DB_HOST, DB_NAME, DB_PASS, DB_PORT, DB_USER
 
 # В .ini прописан путь
 # import os
