@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fd6ef81-38e9-4b23-bfec-9128d67fa75a" name="Changes" comment="Auth, database, cookies and basic user management implemented">
-      <change afterPath="$PROJECT_DIR$/src/auth/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="8fd6ef81-38e9-4b23-bfec-9128d67fa75a" name="Changes" comment="Refactor, email, redis &amp; celery implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/alembic.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/schemas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/versions/28.10.23_13c025f29af2_fix_role_id_from_str_to_int.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/versions/28.10.23_d6fd8fe1bd61_database_upgrade_with_table_changes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/versions/28.10.23_faaa1b19b64e_database_creation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/versions/29.10.23_8f56893d5924_new_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/operations/router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/operations/schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/README" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/script.py.mako" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/versions/2023_10_29_1932-dce1baf3c028_small_backup.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/2023_10_29_1932-dce1baf3c028_small_backup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/operations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/operations/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +47,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sator\PycharmProjects\trading_app" />
+      <recent name="C:\Users\sator\PycharmProjects\trading_app\migrations" />
       <recent name="C:\Users\sator\PycharmProjects\trading_app\src" />
       <recent name="C:\Users\sator\PycharmProjects\trading_app\src\auth" />
-      <recent name="C:\Users\sator\PycharmProjects\trading_app" />
     </key>
   </component>
   <component name="RunManager">
@@ -165,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698593636795</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactor, email, redis &amp; celery implementation">
+      <created>1698611794390</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698611794390</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,7 +180,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Auth, database, cookies and basic user management implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auth, database, cookies and basic user management implemented" />
+    <MESSAGE value="Refactor, email, redis &amp; celery implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor, email, redis &amp; celery implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
