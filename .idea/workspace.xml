@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fd6ef81-38e9-4b23-bfec-9128d67fa75a" name="Changes" comment="More tests">
+    <list default="true" id="8fd6ef81-38e9-4b23-bfec-9128d67fa75a" name="Changes" comment="CORS">
+      <change afterPath="$PROJECT_DIR$/pages/router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_auth.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +41,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sator\PycharmProjects\trading_app\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sator\PycharmProjects\trading_app" />
       <recent name="C:\Users\sator\PycharmProjects\trading_app\migrations" />
@@ -177,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698622832340</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="CORS">
+      <created>1698623944464</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698623944464</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,7 +214,8 @@
     <MESSAGE value="Minor changes, refactor" />
     <MESSAGE value="Added tests, minor qol changes" />
     <MESSAGE value="More tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="More tests" />
+    <MESSAGE value="CORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="CORS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

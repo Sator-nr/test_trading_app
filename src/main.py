@@ -14,10 +14,15 @@ from src.auth.models import User
 from tasks.router import router as router_tasks
 from redis import asyncio as aioredis
 from fastapi.middleware.cors import CORSMiddleware
+from pages.router import router as router_pages
+from fastapi.staticfiles import StaticFiles
 
 app = FastAPI(
     title='Trading App'
 )
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 fastapi_users = FastAPIUsers[User, int](
     get_user_manager,
     [auth_backend],
@@ -52,6 +57,7 @@ app.include_router(
 
 app.include_router(router_operation)
 app.include_router(router_tasks)
+app.include_router(router_pages)
 
 
 async def common_parameters(q: Union[str, None] = None, skip: int = 0, limit: int = 100):
