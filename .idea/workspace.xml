@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fd6ef81-38e9-4b23-bfec-9128d67fa75a" name="Changes" comment="CORS">
-      <change afterPath="$PROJECT_DIR$/pages/router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
+    <list default="true" id="8fd6ef81-38e9-4b23-bfec-9128d67fa75a" name="Changes" comment="Some Jinja front">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/2023_10_30_2133-6a7e3f27d8f0_database_restoring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/2023_10_30_2146-39e11ed95252_database_restoring_new_tables_matadata_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chat/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chat/router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/chat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/trading_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trading_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/2023_10_30_0059-f517ece20dac_another_backup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/operations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/operations/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/operations/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/operations/router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_auth.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +43,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -41,11 +66,14 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sator\PycharmProjects\trading_app\migrations" />
+      <recent name="C:\Users\sator\PycharmProjects\trading_app" />
+      <recent name="C:\Users\sator\PycharmProjects\trading_app\back" />
       <recent name="C:\Users\sator\PycharmProjects\trading_app\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -68,7 +96,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\sator\PycharmProjects\trading_app\src\main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698623944464</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Some Jinja front">
+      <created>1698626556813</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1698626556814</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,7 +250,8 @@
     <MESSAGE value="Added tests, minor qol changes" />
     <MESSAGE value="More tests" />
     <MESSAGE value="CORS" />
-    <option name="LAST_COMMIT_MESSAGE" value="CORS" />
+    <MESSAGE value="Some Jinja front" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some Jinja front" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -3,8 +3,10 @@ from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 from alembic import context
 from src.config import DB_HOST, DB_NAME, DB_PASS, DB_PORT, DB_USER
-from src.database import metadata
+from src.database import Base
 
+# metadata = [User.metadata, Role.metadata, Operation.metadata, Messages.metadata]
+metadata = Base.metadata
 config = context.config
 
 section = config.config_ini_section
@@ -24,6 +26,7 @@ if config.config_file_name is not None:
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
+# target_metadata = [metadata, Base.metadata]
 target_metadata = metadata
 
 # other values from the config, defined by the needs of env.py,
